@@ -9,11 +9,11 @@ namespace Benchmark
     //[InProcess] // in-process execution
     public class MergeArrayBenchmark
     {
-        const int DATA_LENGTH = 1000;
+        const int DATA_LENGTH = 10000;
         private static readonly Random _random = new(DateTime.Now.Millisecond);
         private IReadOnlyCollection<(int[] m1, int[] m2)> _testData;
 
-        private static (int From, int To) _arrayLength = (0, 5000);
+        private static (int From, int To) _arrayLength = (10, 1000);
         private static (int From, int To) _arrayStart = (0, 9999);
 
 
